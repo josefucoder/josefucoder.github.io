@@ -1,0 +1,16 @@
+
+img {
+	border-radius: 5px;
+}
+
+p {
+	text-align: justify;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+
+.title-nav {
+    font-size: 25px;
+}
+
+}

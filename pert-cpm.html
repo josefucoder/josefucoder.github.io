@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Planeacion y Control de Proyectos</title>
+	<link rel="stylesheet" type="text/css" href="css/materialize.css">
+	<link rel="stylesheet" type="text/css" href="css/material-icons.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" type="favicon" href="favicon.ico">
+</head>
+<body class="grey">
+	
+   <nav class="navbar-fixed indigo darken-4">
+    <div class="nav-wrapper container ">
+      <a href="index.html" class="title-nav">Planeacion y Control de Proyectos</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>	
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="pert-cpm.html">Diagramas PERT-CPM</a></li>
+        <li><a href="calendarizacion.html">Calendarización</a></li>
+      </ul>
+    </div>
+  </nav>
+ 
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="pert-cpm.html">Diagramas PERT-CPM</a></li>
+    <li><a href="calendarizacion.html">Calendarización</a></li>
+  </ul>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center blue-text text-lighten-5 ">Planeacion y Control de Proyectos</h1>
+        <div class="row center">
+          <h5 class="header col s12 blue-text text-lighten-5 ">Blog Desarrollado por: </h5>
+          <h6 class=" blue-text text-lighten-5 ">Jose Alvarez C.I 28.393.503</h6>
+          <h6 class=" blue-text text-lighten-5 ">Manuel Del Nogal C.I 27.839.168</h6>
+          <h6 class=" blue-text text-lighten-5 ">Trayecto IV Seccion 3</h6>
+          <h6 class=" blue-text text-lighten-5 ">Gestion de Proyectos</h6>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="img/img1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+  <div class="container">
+
+    <div class="row">
+       <div class="col s12">
+          <h2>Diagramas de PERT-CPM</h2>
+          <p>Técnicas que funcionan en base a estadísticas que se usan en el proceso de calendarización de proyectos. Estas tecnicas se especializan básicamente en calcular el tiempo mínimo requerido para acabar un proyecto. Permiten manejar los problemas en el tiempo de término de los proyectos o actividades.</p>
+
+          <h2>PERT - Técnica de Evaluación y Revisión de Proyectos</h2>
+          <p>El desarrollo del método PERT se inició en 1957 cuando la Marina de los Estados Unidos se enfrentó
+           a la problemática de coordinación y control que surgió en la realización del proyecto de submarinos
+           atómicos armados con proyectiles Polaris (proyecto Polaris), teniendo que mantener relacón con
+           250 contratistas directos y más de 9000 subcontratistas, además de un número elevado de agencias
+           gubernamentales.<br>
+           El método PERT, igual que su predecesor, el diagrama de Gantt, parte de la descomposición del
+           proyecto en una serie de actividades u obras parciales, donde la actividad se entiende como la
+           ejecución de una tarea, que exige para su realización la utilización de recursos (mano de obra,
+           maquinaría, materiales, etc.).<br>
+           Definido el concepto de actividad, se establece el concepto de suceso. Un suceso es un
+           acontecimiento, un punto en el tiempo, una fecha en el calendario. El suceso no consume recursos,
+           sólo indica el principio o el fin de una actividad o de un conjunto de actividades.<br>
+           Para representar las diferentes actividades en que se descompone un proyecto, así como sus
+           correspondientes sucesos, se utiliza una estructura de grafo. Los arcos del grafo representan las
+           actividades, y los vértices, los sucesos.  Hay que familiarizarse con la idea de que la longitud del arco
+           no tiene por qué guardar relación con el tiempo previsto para ejecutar la actividad que representa.<br>
+           Si las actividades son A, B, C, y D. Para poder iniciar las actividades B, C y D es necesario que se haya
+          finalizado la actividad A. El vértice que representa el fin de la actividad A, a su vez, es el comienzo de
+          la actividad B.<br>
+          Una vez descompuesto el proyecto en actividades, la fase siguiente del método PERT consiste en
+          establecer las prelaciones existentes entre las diferentes actividades. Estas prelaciones indican el
+          orden en que deben ejecutarse dichas actividades. Por razones de tipo técnico, económico o
+          jurídico, las diferentes actividades que constituyen un proyecto deben ejecutarse según un cierto
+          orden.<br>
+          El método PERT (Proyect Evaluation and Review Techniques) es un algoritmo basado en la teoría de
+          redes diseñado para facilitar la planificación de proyectos.<br>
+          El resultado final de la aplicación del algoritmo PERT será un cronograma para el proyecto, donde se
+          podrá conocer la duración total del mismo y la clasificación de actividades según su criticidad.<br>
+          El algoritmo PERT se desarrolla mediante intervalos probabilisticos, considerando tiempos
+          optimistas, probables y pesimistas, lo que lo diferencia del método CPM (método de la ruta crítica)
+          que supone tiempos determinísticos.<br>
+          En sus inicios la técnica PERT se aplicó para evaluar la programación de proyectos de investigación y
+          desarrollo, actualmente también se utiliza para controlar el avance de otros proyectos como:
+          programas de construcción, preparación de presupuestos, campañas políticas, lanzamientos de
+          nuevos productos, etc.</p>
+          <h3>Objetivos de la Tecnica PERT</h3>
+          <ol>
+            <li>Ayudar a la planeación y control de un proyecto.</li>
+            <li>Determinar la probabilidad de cumplir con fechas de entrega específicas.</li>
+            <li>Identificar aquellas actividades que es más probable que se conviertan en cuellos de botella.</li>
+            <li>Calificación de actividades y análisis de tiempos.</li>
+            <li>Evaluación del efecto de los cambios en el proyecto.</li>
+            <li>Evaluación del efecto al desviarse de lo programado.</li>
+          </ol>
+          <h3>Ventajas del Método PERT</h3>
+          <ol>
+            <li>Metodo sencillo.</li>
+            <li>Idoneo para proyectos complejos.</li>
+            <li>Proporciona varios planes de ejecución</li>
+          </ol>
+           <h3>Desventajas del Método PERT</h3>
+          <ol>
+            <li>Solo admite relaciones de tipo final/comienzo</li>
+            <li>Con demora nula.</li>
+            <li>Se utiliza un método de representación gráfica como complemento.</li>
+          </ol>
+          <h3>Reglas de la Estructura de la Red PERT</h3>
+          <ol>
+            <li>Cada actividad se debe representar sí y sólo sí por un ramal o arco.</li>
+            <br>
+            <img src="img/ejemplo1.jpg" alt="ejemplo de un arco o ramal" title="Ejemplo de Arco">
+
+            <li>Los vértices del grafo, representados por circunferencias también llamados
+            nodos, son los sucesos o eventos, puntos en el tiempo que marca la
+            terminación de una o más actividades y el comienzo de otras u otras.
+            A estos nodos se incorporan números que indican las fechas en términos relativos.
+            Las fechas en los nodos son:</li>
+            <ul>
+              <li>Número asignado a cada nodo o número de identificación de la actividad.</li>
+              <li>T<sub>1</sub> =  Ocurrencia temprana (Early), momento o punto en el tiempo donde se  puede dar la
+          actividad.</li>
+          <li>T<sub>2</sub> = Ocurrencia tardía o más lejana (Last), momento o punto en el tiempo más tardío que
+          puede ocurrir la actividad.</li>
+          <li>H<sub>t</sub> = Holgura total de que se dispone para la ocurrencia de una actividad</li>
+          <br>
+            <img src="img/ejemplo2.jpg" alt="ejemplo de los tipos de nodos" title="Tipos de Nodos">
+          <p>Cada actividad debe estar identificada por dos nodos distintos. En el caso de
+          existir actividades concurrentes (que se inicien al mismo tiempo, o bien que el
+          inicio de una actividad dependa de la finalización de dos o más actividades
+          distintas) se debe recurrir a actividades ficticias (representadas por arcos
+          punteados que no consumen ni tiempo ni recursos).</p>
+          <img src="img/ejemplo3.jpg" alt="ejemplo de las actividades" title="ejemplo de la actividad">
+            </ul>
+          <li>Al no ser un procedimiento de tipo gráfico no es necesario representar los arcos con longitud
+proporcional a la duración de las actividades a que se asocian.</li>
+
+          <li>Existen dos tipos de actividades: Reales o Ficticias.
+            <ul>
+               <li>ACTIVIDADES REALES:  Consume recursos, indicando una relación de precedencia.
+Se representa por una flecha de línea continua.</li>
+               <li>ACTIVIDADES FICTICIAS:  No consume recursos pero si indica una relación
+de precedencia. Se representa por una línea discontinua.</li>
+           </ul>
+         </li>
+           
+          </ol>
+          <h3>Pasos para la planificacion de proyectos PERT</h3>
+          <ol>
+            <li>Identifica tus tareas: debes establecer todas las tareas necesarias para completar tu proyecto, lo cual puede llevar bastante tiempo. Sin embargo, si lo que tienes es un proyecto complejo, resulta esencial que obtenga visibilidad en esta etapa inicial.</li>
+            <li>Define una secuencia adecuada: decide cuál es la mejor secuencia para obtener los mejores resultados en cada tarea y recuerda que puedes ejecutar varias tareas en forma paralela. Establece las dependencias entre tareas en un orden razonable.</li>
+            <li>Calcula los tiempos: estima cuánto tiempo lleva cada tarea, creando un tiempo optimista, pesimista y esperado.</li>
+            <li>Crea un diagrama PERT: crea una representación visual de tu proyecto.</li>
+            <li>Asigna tiempo de holgura: asegúrate de que sabes cuántos recursos requerirá cada tarea.</li>
+            <li>Cálculo de la ruta crítica: según tu marco de trabajo hasta ahora, establece una fecha para la finalización total.</li>
+          </ol>
+          <h3>Planificación de tareas en PERT</h3>
+          <p>Una tabla PERT te ayudará a registrar tus tiempos y la secuencia de actividades. Esto no solo es útil en las etapas de planificación, sino que también es un valioso calendario al que puedes remitirte para todo el proyecto. A continuación, se muestra un ejemplo de tabla PERT:</p>
+
+            <table class="highlight responsive-table">
+        <thead>
+          <tr>
+              <th>Actividad</th>
+              <th>Tiempos - Descripción</th>
+              <th>Predecesores</th>
+              <th>Optimista</th>
+              <th>Normal</th>
+              <th>Pesimista</th>
+              <th>Esperado</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>0</td>
+            <td>Fecha de inicio</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>A</td>
+            <td>Selección de personal</td>
+            <td>0</td>
+            <td>10</td>
+            <td>15</td>
+            <td>20</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>B</td>
+            <td>Selección de equipo</td>
+            <td>0</td>
+            <td>5</td>
+            <td>10</td>
+            <td>15</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>C</td>
+            <td>Creación de planos</td>
+            <td>A</td>
+            <td>10</td>
+            <td>12</td>
+            <td>18</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>D</td>
+            <td>Incorporación del personal</td>
+            <td>A</td>
+            <td>7</td>
+            <td>10</td>
+            <td>15</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>E</td>
+            <td>Instalación de equipo nuevo</td>
+            <td>B,C</td>
+            <td>48</td>
+            <td>72</td>
+            <td>96</td>
+            <td>72</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>CPM - Método de Ruta Crítica</h2>
+      <p>El método CPM (Critical Path Method) es frecuentemente utilizado en el desarrollo y control de
+proyectos. El objetivo principal es determinar la duración de un proyecto, entendiendo éste como una
+secuencia de actividades relacionadas entre sí, donde cada una de las actividades tiene una duración
+estimada.
+La realización de cualquier proyecto lleva dos costes: Los directos que provienen de factores
+directamente imputables a cada tarea (coste del equipo, materias primas, horas de máquina, horas de
+hombres, etc.), y los indirectos que son imputables mediante claves de distribución (gastos generales,
+multas, supervisión, etc.).
+Las versiones originales de los métodos PERT Y CPM se diferencian en dos aspectos importantes:</p>
+       <ol>
+         <li>El método PERT supone que los tiempos de ejecución son probabilísticos, mientras que el método
+CPM supone que las actividades son determinísticas.</li>
+         <li>El método CPM asigna la misma importancia al tiempo y al coste.</li>
+       </ol>
+       <h3>ESTRUCTURA DEL PROBLEMA CPM</h3>
+       <p>El objetivo fundamental de la técnica CPM,  es determinar  el cambio entre tiempo y coste que debe
+emplearse en cada actividad, para cumplir con el tiempo de finalización del proyecto programado a un
+coste mínimo.
+Los costes directos de una actividad suelen estar relacionados inversamente con su duración.</p>
+<h4>Ejemplo:</h4>
+<img src="img/ejemplo4.jpg" alt="ejemplo de estructura">
+<p>Cuando se reduce la duración de una actividad
+(i, j) a partir de un punto (D<sub>ij</sub> , CD<sub>ij</sub> ) llega un
+momento en el que resulta imposible
+disminuirla por debajo de un cierto valor di j
+denominado duración récord.
+El punto   (d<sub>ij</sub> , Cd<sub>ij</sub> )  proporciona el tiempo y el
+coste necesarios cuando se realiza la actividad
+de forma intensiva, es decir, se acelera
+completamente sin reparar en costes.
+Al aumentar la actividad llega un momento Di j  en que los costes dejan de disminuir, esta duración se
+denomina normal.
+El punto determinado (D<sub>ij</sub> , CD<sub>ij</sub> ) proporciona el coste y tiempo necesarios cuando la actividad se
+realiza de forma normal, sin recurrir a costes adicionales (horas extra, materiales especiales, etc.) para
+acelerar la actividad.
+Variables de decisión:   x<sub>ij</sub> ≡  tiempo de duración de la actividad (i, j)
+Naturalmente, cuando es necesario acortar la duración de un proyecto, se desea hacerlo con el
+mínimo coste posible. Se hace necesario calcular las pendientes de coste de todas las actividades.<br>
+Las pendientes de coste representan el incremento de coste directo producido al reducir la duración
+del proyecto en una unidad de tiempo.</p>
+<h4>Ejemplo</h4>
+<img src="img/ejemplo5.jpg">
+<h3>FORMULACIÓN DEL PROBLEMA CPM MEDIANTE PROGRAMACIÓN LINEAL
+</h3>
+<p>Durante un tiempo máximo T de finalización del proyecto, se deben determinar las duraciones  i j x
+que minimicen el coste total.
+Para tener en cuenta la finalización del proyecto se necesita una variable para cada suceso, a continuacion un ejemplo de algunas variables:</p>
+<img src="img/ejemplo7.jpg">
+<p>Una vez obtenida la solución para diversos valores de T, será preciso combinar los resultados
+obtenidos, con los costes indirectos para determinar el valor óptimo de T.<br><br>
+Aqui concluyo con algunos de los conceptos que manejan los Diagramas de PERT-CPM que son muy extensos para un solo articulo.</p>
+       </div>
+    </div>    
+    
+  </div>
+
+ <footer class="page-footer light-blue darken-1">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 center">
+
+          <h4>Contenidos</h4>
+
+    <li><a class="white-text" href="index.html">Planificacion y Control de Proyectos</a></li><br>
+    <li><a class="white-text" href="pert-cpm.html">Diagramas PERT-CPM</a></li><br>
+    <li><a class="white-text" href="calendarizacion.html">Calendarización</a></li><br>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container center">
+      Planeacion y Control de Proyectos Copyright - 2022
+      </div>
+    </div>
+  </footer>
+
+
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
+<script type="text/javascript" src="js/js.js"></script>	
+</body>
+</html>
